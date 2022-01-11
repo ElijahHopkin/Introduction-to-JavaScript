@@ -13,13 +13,17 @@ returns a value, that value will be logged to the console.  An example of this w
 /*
 Task 1a - Voting Age
 
+
 Do the following:   
    1. Create a variable called votingAge and assign it a value
    2. Console log true if age is 18 or higher
 
    HINT: no function required
 */
-
+const votingAge= 18
+if(votingAge>= 18) {
+  console.log(true)
+}
 
 
 /*
@@ -32,7 +36,11 @@ Do the following:
 
    HINT: no function required
 */
-
+let var1= 20
+let var2= 40
+if (var1 < var2) {
+  console.log(var1+1)
+}
 
 
 
@@ -47,6 +55,8 @@ Do the following:
 
    HINT: look up the Number method
 */
+let string= '1999'
+console.log(Number('1999'))
 
 
 
@@ -60,9 +70,10 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-  /*add your code here*/
+function multiply(a,b){
+  return a*b
 }
+console.log('task 1d',multiply(4,5))
 
 
 
@@ -76,9 +87,12 @@ Do the following:
  3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-  /*add your code here*/
+function dogYears(age){
+  let dogYears= age*7
+  return dogYears
+  
 }
+console.log(dogYears(3))
 
 
 
