@@ -138,7 +138,7 @@ function hungryDog(weight, years){
     return weight * 0.1
   } else if (years > 0.333 && years <= 0.5833) {
     return weight *0.05
-  } else {
+  } else if (years >= 0.5833 && years <=1) {
     return weight * 0.04
   }
 }
@@ -231,9 +231,10 @@ Using the feet function below do the following:
 */
 
 function feet(metric){
-  feet= metric * 30.48
+  let foot= metric / 30.48
+  return foot
 }
-console.log(feet(3))
+console.log(feet(24))
 
 
 
