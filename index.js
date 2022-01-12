@@ -213,9 +213,11 @@ Using the miles function below do the following:
 3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-  /*add your code here*/
+function miles(distance){
+  let miles= distance *0.621371
 }
+console.log(miles(5))
+
 
 
 
@@ -243,9 +245,9 @@ Using the annoyingSong function below do the following:
     "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
 
-function annoyingSong(/*add your code here*/){
-      /*add your code here*/
+function annoyingSong(){
 }
+
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -263,10 +265,21 @@ Using the grade function below do the following:
  below should return 'you got an F'
 */
 
-function grade(/*Your Code here */){
-/*Your Code here */
+function grade(){
+let grade1= Math.random() *100
+if (grade1 >=90 ) {
+  return 'you got an A'
+}else if (grade1 >=80 && grade1 <90) {
+  return 'you got a B'
+}else if (grade1 >= 70 && grade1 < 80) {
+  return 'you got a C'
+}else if (grade1 >=60 && grade1 <70) {
+  return 'you got a D'
+}else {
+  return 'you got an F'
 }
-
+}
+console.log(grade())
 
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
