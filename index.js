@@ -229,9 +229,10 @@ Using the feet function below do the following:
 3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-  /*add your code here*/
+function feet(metric){
+  feet= metric * 30.48
 }
+console.log(feet(3))
 
 
 
@@ -269,21 +270,21 @@ Using the grade function below do the following:
  below should return 'you got an F'
 */
 
-function grade(){
-let grade1= Math.random() *100
-if (grade1 >=90 ) {
+function grade(score){
+
+if (score >=90 ) {
   return 'you got an A'
-}else if (grade1 >=80 && grade1 <90) {
+}else if (score >=80 && score <90) {
   return 'you got a B'
-}else if (grade1 >= 70 && grade1 < 80) {
+}else if (score >= 70 && score < 80) {
   return 'you got a C'
-}else if (grade1 >=60 && grade1 <70) {
+}else if (score >=60 && score <70) {
   return 'you got a D'
 }else {
   return 'you got an F'
 }
 }
-console.log(grade())
+console.log(grade(67))
 
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
@@ -299,8 +300,8 @@ HINT - try looking up the .includes() method
 */
 
 
-function vowelCounter(/*add your code here*/) {
-  /*add your code here*/
+function vowelCounter() {
+  
 }
 
 
