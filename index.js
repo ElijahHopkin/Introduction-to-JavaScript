@@ -138,7 +138,7 @@ function hungryDog(weight, years){
     return weight * 0.1
   } else if (years > 0.333 && years <= 0.5833) {
     return weight *0.05
-  } else if (years >= 0.5833) {
+  } else {
     return weight * 0.04
   }
 }
@@ -213,8 +213,9 @@ Using the miles function below do the following:
 3. Return the number of miles
 */
 
-function miles(distance){
-  let miles= distance *0.621371
+function miles(kilometers){
+  let mile1= kilometers *0.621371
+  return mile1
 }
 console.log(miles(5))
 
