@@ -20,10 +20,10 @@ Do the following:
 
    HINT: no function required
 */
-const votingAge= 18
-if(votingAge>= 18) {
-  console.log(true)
-}
+// const votingAge= 18;
+// if(votingAge>= 18) {
+//   console.log(true);
+// }
 
 
 /*
@@ -39,7 +39,7 @@ Do the following:
 let var1= 20
 let var2= 40
 if (var1 < var2) {
-  console.log(var1+1)
+  // console.log(var1+1)
 }
 
 
@@ -56,7 +56,7 @@ Do the following:
    HINT: look up the Number method
 */
 let string= '1999'
-console.log(Number('1999'))
+// console.log(Number(string))
 
 
 
@@ -73,7 +73,7 @@ Do the following:
 function multiply(a,b){
   return a*b
 }
-console.log('task 1d',multiply(4,5))
+// console.log('task 1d',multiply(4,5))
 
 
 
@@ -88,11 +88,10 @@ Do the following:
 */
 
 function dogYears(age){
-  let dogYears= age*7
-  return dogYears
+  return age*7
   
 }
-console.log(dogYears(3))
+// console.log(dogYears(3))
 
 
 
@@ -142,7 +141,7 @@ function hungryDog(weight, years){
     return weight * 0.04
   }
 }
-console.log(hungryDog(15,1))
+// console.log(hungryDog(15,1))
 
 
 
@@ -197,7 +196,7 @@ function game(user, computer){
     return `it's a tie`
   }
 }
-console.log(game('rock',computer))
+// console.log(game('rock',computer))
 
 
 
@@ -217,7 +216,7 @@ function miles(kilometers){
   let mile1= kilometers *0.621371
   return mile1
 }
-console.log(miles(5))
+// console.log(miles(5))
 
 
 
@@ -234,7 +233,7 @@ function feet(metric){
   let foot= metric / 30.48
   return foot
 }
-console.log(feet(24))
+// console.log(feet(24))
 
 
 
@@ -253,7 +252,7 @@ function annoyingSong(startnum){
     return `${i} bottles of soda on the wall, ${i} bottles of soda, take one down pass it around ${i-1} bottles of soda on the wall`
   }
 }
-console.log(annoyingSong(10))
+// console.log(annoyingSong(10))
 
 
 
@@ -286,7 +285,7 @@ if (score >=90 ) {
   return 'you got an F'
 }
 }
-console.log(grade(67))
+// console.log(grade(67))
 
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
@@ -302,9 +301,36 @@ HINT - try looking up the .includes() method
 */
 
 
-function vowelCounter() {
-  
-}
+function vowelCounter(string) {
+  // CAN'T SEEM TO GET THIS TO WORK!!
+    let phrase= string.toLowerCase();
+    phrase= phrase.split('');
+    let vowels=[];
+    for( let i=0; i<phrase.length; i++){
+    if (phrase[i].includes('a')===true) {
+      vowels.push(phrase[i])
+    } else if (phrase[i].includes('e')===true) {
+      vowels.push(phrase[i])
+    } else if (phrase[i].includes('i')===true) {
+      vowels.push(phrase[i])
+    } else if (phrase[i].includes('o')===true) {
+      vowels.push(phrase[i])
+    }
+    }
+    console.log(phrase)
+    return vowels.length
+  }
+  //   let vowels=['a', 'e', 'i', 'o', 'u'];
+  //   let phraseVowels=[];
+  // for( let i=0; i<phrase.length; i++){
+  //   if(vowels.includes(phrase[i]){
+  //     phraseVowels.push(phrase[i])
+  //   }
+  // }
+  // return phraseVowels.length
+
+
+console.log('bonus', vowelCounter('I want to go home'))
 
 
 
